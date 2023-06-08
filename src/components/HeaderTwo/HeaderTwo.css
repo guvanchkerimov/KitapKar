@@ -1,0 +1,8 @@
+.linkHeader {
+    text-transform: capitalize !important;
+    color: gray !important;
+    transition: 0.5s !important;
+}
+.linkHeader:hover {
+    color: black !important;
+}

@@ -1,0 +1,15 @@
+export type ProductType = {
+    id: number,
+    title : string,
+    author: string,
+    img_url: string,
+    description: string,
+    language: string,
+    category: number,
+    publish_year: number,
+    pages: number,
+    rent_price: number,
+    on_rent: boolean,
+    price: number,
+    owner_id: number,
+}

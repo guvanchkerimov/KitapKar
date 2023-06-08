@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "nunito-font";
+    src: url("./fonts/Nunito-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: "nunito-italic";
+    src: url("./fonts/Nunito-Italic-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: "ubuntu-regular";
+    src: url("./fonts/Ubuntu-Regular.ttf");
+}
+@font-face {
+    font-family: "ubuntu-bold";
+    src: url("./fonts/Ubuntu-Bold.ttf");
+}
+
+* {
+    font-family: "ubuntu-regular";
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+.CardItems:hover {
+    /* margin-top: 20px; */
+}
+
+.backBook {
+    background-image: url("../public/back.jpg");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: contain;
+}
+.backOpacity {
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.86);
+}
