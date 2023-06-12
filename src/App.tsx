@@ -12,6 +12,7 @@ import Profile from "./page/Profile";
 import { useBooksStore } from "./modules/booksApi/store";
 import { useIsTrueSearch } from "./modules/store";
 import BookStore from "./page/BookStore";
+import HeaderTwo from "./components/HeaderTwo/HeaderTwo";
 
 const App = () => {
     const fetchBooks = useBooksStore((state) => state.fetchBooks);
@@ -38,6 +39,7 @@ const App = () => {
         <ThemeProvider theme={themeApp}>
             <BrowserRouter>
                 <Header />
+                <HeaderTwo/>
                 <Routes>
                     <Route path="/" element={<Index />} />
                     <Route

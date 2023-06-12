@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Stack, TextField, Container, Button } from "@mui/material";
 import "./HeaderTwo.css";
@@ -53,10 +53,7 @@ const StyledMenu = styled((props: MenuProps) => (
         },
     },
 }));
-type IProps = {
-    disabled?: boolean;
-};
-const HeaderTwo = (props: IProps) => {
+const HeaderTwo = () => {
     let filterBook = useBooksStore((state) => state.filterBook);
     const categoryApi = useCategoryStore((state) => state.categoryApi);
     const fetchCategories = useCategoryStore((state) => state.fetchCategories);
@@ -79,7 +76,7 @@ const HeaderTwo = (props: IProps) => {
     }
 
     const { t } = useTranslation();
-    const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
+    const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
     const open = Boolean(anchorEl);
     const handleClick = (event: React.MouseEvent<HTMLElement>) => {
         setAnchorEl(event.currentTarget);
@@ -108,7 +105,6 @@ const HeaderTwo = (props: IProps) => {
 
     useEffect(() => {
         fetchCategories();
-        // console.log(Object.values(param)[0]);
     }, []);
 
     return (

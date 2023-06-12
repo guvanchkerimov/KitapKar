@@ -1,4 +1,3 @@
-import HeaderTwo from "../components/HeaderTwo/HeaderTwo";
 import Products from "../components/Products/Products";
 import { BookType } from "../modules/booksApi/store";
 
@@ -10,7 +9,6 @@ type IProps = {
 const Books = (props: IProps) => {
     return (
         <>
-            <HeaderTwo disabled={true} />
             <Products
                 category={props.category}
                 product={props.product}
